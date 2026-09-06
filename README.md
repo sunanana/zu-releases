@@ -4,7 +4,7 @@
 
 <p align="center"> <a href="https://github.com/sunanana/zu-releases/releases/latest"><img alt="release" src="https://img.shields.io/github/v/release/sunanana/zu-releases?label=release&color=blue"></a> <img alt="platform" src="https://img.shields.io/badge/platform-macOS%20(Apple%20Silicon)-lightgrey"> </p>
 
-<p align="center"> <a href="https://github.com/sunanana/zu-releases/releases/download/v0.18.1/zu_0.18.1_aarch64.dmg"><img src="assets/download-macos.svg" width="236" alt="Download for macOS"></a> </p>
+<p align="center"> <a href="https://github.com/sunanana/zu-releases/releases/download/v0.19.0/zu_0.19.0_aarch64.dmg"><img src="assets/download-macos.svg" width="236" alt="Download for macOS"></a> </p>
 
 <p align="center"> <img src="assets/screenshot.png" width="900" alt="zu のメイン画面"> </p>
 
@@ -18,7 +18,7 @@
 
 ## インストール
 
-1. [zu_0.18.1_aarch64.dmg](https://github.com/sunanana/zu-releases/releases/download/v0.18.1/zu_0.18.1_aarch64.dmg) をダウンロードします(過去の版は [Releases](https://github.com/sunanana/zu-releases/releases) から)
+1. [zu_0.19.0_aarch64.dmg](https://github.com/sunanana/zu-releases/releases/download/v0.19.0/zu_0.19.0_aarch64.dmg) をダウンロードします(過去の版は [Releases](https://github.com/sunanana/zu-releases/releases) から)
 2. dmg を開き、`zu.app` を `Applications` へドラッグします
 3. `zu.app` を起動します。メニューバーにアイコンが出れば起動しています
 
