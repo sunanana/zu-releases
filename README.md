@@ -4,13 +4,13 @@
 
 <p align="center"> <a href="https://github.com/sunanana/zu-releases/releases/latest"><img alt="release" src="https://img.shields.io/github/v/release/sunanana/zu-releases?label=release&color=blue"></a> <img alt="platform" src="https://img.shields.io/badge/platform-macOS%20(Apple%20Silicon)-lightgrey"> </p>
 
-<p align="center"> <a href="https://github.com/sunanana/zu-releases/releases/download/v0.21.0/zu_0.21.0_aarch64.dmg"><img src="assets/download-macos.svg" width="236" alt="Download for macOS"></a> </p>
+<p align="center"> <a href="https://github.com/sunanana/zu-releases/releases/download/v0.22.0/zu_0.22.0_aarch64.dmg"><img src="assets/download-macos.svg" width="236" alt="Download for macOS"></a> </p>
 
 <p align="center"> <img src="assets/screenshot.png" width="900" alt="zu のメイン画面"> </p>
 
 ## 機能
 
-* **13種類の記法に対応** — Mermaid / PlantUML / D2 / Graphviz / Vega・Vega-Lite / MarkWhen / flowchart.js / bytefield / WireViz / CircuiTikZ / Marp / Markmap / Markdown
+* **14種類の記法に対応** — Mermaid / PlantUML / D2 / Graphviz / Vega・Vega-Lite / MarkWhen / flowchart.js / bytefield / WireViz / CircuiTikZ / Marp / Markmap / Markdag / Markdown
 * **AIによる作図** — MCP連携で、AIとの会話の中で「この構成をシーケンス図にしてzuに入れて」と依頼すると作図出来ます。Claude Code・Claude Desktop・Codex・Antigravityに対応。
 * **自分で作図** — サイドバーの新規作成アイコンから作成でき、編集も可能です。
 * **書き出す** — PNG / SVG / HTML / PDF(Marpのみ) / プリンター印刷
@@ -18,7 +18,7 @@
 
 ## インストール
 
-1. [zu_0.21.0_aarch64.dmg](https://github.com/sunanana/zu-releases/releases/download/v0.21.0/zu_0.21.0_aarch64.dmg) をダウンロードします(過去の版は [Releases](https://github.com/sunanana/zu-releases/releases) から)
+1. [zu_0.22.0_aarch64.dmg](https://github.com/sunanana/zu-releases/releases/download/v0.22.0/zu_0.22.0_aarch64.dmg) をダウンロードします(過去の版は [Releases](https://github.com/sunanana/zu-releases/releases) から)
 2. dmg を開き、`zu.app` を `Applications` へドラッグします
 3. `zu.app` を起動します。メニューバーにアイコンが出れば起動しています
 
@@ -56,16 +56,22 @@ codex mcp add zu -- /Applications/zu.app/Contents/Resources/zu-mcp
 | --- | --- |
 | `add_diagram` | 図を追加する |
 | `list_diagrams` | 追加済みの図を一覧する |
-| `check_[diagram]_syntax` | 追加前に記法を検証する(Mermaid / D2 / Vega / MarkWhen / flowchart / bytefield / WireViz / Graphviz / CircuiTikZ / Marp / Markmap) |
+| `check_[diagram]_syntax` | 追加前に記法を検証する(Mermaid / D2 / Vega / MarkWhen / flowchart / bytefield / WireViz / Graphviz / CircuiTikZ / Marp / Markmap / Markdag) |
 | `get_[diagram]_style_guide` | 図種ごとのスタイルガイドを読む |
 | `update_[diagram]_style_guide` | スタイルガイドを書き換える |
 
 ## エディターモード
 
 エディターモードではライブプレビューでの即時表示。
-図の要素をダブルクリックすると対応するコードジャンプします(mermaid/Marp/Markmap/Markdownのみ)
+図の要素をダブルクリックすると対応するコードジャンプします(mermaid/Marp/Markmap/Markdag/Markdownのみ)
 
 <p align="center"> <img src="assets/editor.gif" width="900" alt="分割編集モードで図を直す"> </p>
+
+## Markdagの制限
+
+* 図の上でタスクをクリックすると、ファイルが書き換わります。AI(MCPの`update_diagram`)が同じ図を同時に更新すると、クリックしたチェックが巻き戻ることがあります。
+* 印刷は、画面と同じ配色のときは見えている範囲、違う配色のときは図の全体になります。
+* 凡例(右上)は、操作案内を表示している間は隠れます。
 
 ## 動作環境
 
